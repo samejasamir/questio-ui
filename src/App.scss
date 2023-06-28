@@ -1,0 +1,22 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.app {
+    text-align: center;
+}
+
+.banner {
+    @extend .fs-1;
+}
+
+.disclaimer1 {
+    @extend .fs-5;
+    @extend .text-body-secondary;
+    @extend .lh-sm
+}
+
+.disclaimer2 {
+    @extend .fs-6;
+    @extend .text-body-secondary;
+    @extend .lh-sm
+
+}
