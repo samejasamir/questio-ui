@@ -1,6 +1,7 @@
 export type ArticleModel = {
     articleId: any;
     articleDated: any;
+    articleTItle: String;
     mediaHouse: String;
     articleURL: String;
     articleSummary: String;

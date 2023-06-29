@@ -1,4 +1,5 @@
-const getBaseURL = () =>
+export const getBaseURL = (suffix:String) =>
 {
-    return process.env.NODE_ENV === "production" ? "" : "http://localhost:8080";
+    var baseUrl = process.env.NODE_ENV === "production" ? "" : "http://localhost:8080/v1";
+    return baseUrl + "/" + suffix;
 }

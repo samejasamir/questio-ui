@@ -1,0 +1,6 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+.cardContainer{
+    @extend .card;
+    @extend .w-25;
+}

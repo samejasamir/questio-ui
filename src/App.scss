@@ -1,5 +1,9 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+.gutter {
+    margin-top: 10px;
+}
+
 .app {
     text-align: center;
 }
@@ -8,15 +12,35 @@
     @extend .fs-1;
 }
 
+.bannerContainer {    
+    background-color:black;
+    color:white
+}
+
 .disclaimer1 {
     @extend .fs-5;
-    @extend .text-body-secondary;
-    @extend .lh-sm
+    @extend .lh-sm;
+    margin-top: 5px;
 }
 
 .disclaimer2 {
     @extend .fs-6;
-    @extend .text-body-secondary;
     @extend .lh-sm
+}
 
+.disclaimer3{
+    text-decoration: underline;
+}
+
+.disclaimerVerticalRule{
+    @extend .vr;
+    width: 2px;
+    height:40px;
+    margin-top: 9px;
+    background-color:white;
+}
+
+.articleContainer {
+    @extend .container;
+    margin-top: 30px;
 }
