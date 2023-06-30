@@ -3,4 +3,20 @@
 .cardContainer{
     @extend .card;
     @extend .w-25;
+    @extend .col;
+    margin-right: 25px;
+}
+
+.badgeCategory {
+    // badge bg-warning text-dark
+    @extend .badge;
+    @extend .bg-warning;
+    @extend .text-dark;
+    margin-right: 5px;
+}
+
+.badgeSource {
+    @extend .badge;
+    @extend .bg-dark;    
+    margin-right: 5px;
 }
