@@ -14,6 +14,7 @@ export default function ArticleComponent(){
   }, []);
   
   return (
+    <div className='container-fluid'>
     <div className='row'>
     {
       articles.map((article, index)=>(        
@@ -25,10 +26,11 @@ export default function ArticleComponent(){
             <h6 className="badgeCategory">{article.articleCategory}</h6>
             <h6 className="badgeSource">{article.mediaHouse}</h6><br/>
             <a href={article.articleURL} className="card-link" target='window'>{article.articleURL}</a>
-          </div>
+          </div>          
         </div>
       ))
     }
+    </div>
     </div>
   );
 
