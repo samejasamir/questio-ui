@@ -2,9 +2,10 @@
 
 .cardContainer{
     @extend .card;
-    @extend .w-25;
-    @extend .col;
+    @extend .col-12;
+    @extend .col-sm;
     margin-right: 25px;
+    margin-bottom: 25px;
 }
 
 .badgeCategory {

@@ -1,5 +1,10 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+$small:576px;
+$medium:768px;
+$large:960px;
+$extra-large:1200px;
+
 .gutter {
     margin-top: 10px;
 }
@@ -8,13 +13,30 @@
     text-align: center;
 }
 
-.banner {
-    @extend .fs-1;
+.bannerBackground {
+    background-color:darkblue;
+    color:white;
 }
 
-.bannerContainer {    
-    background-color:black;
-    color:white
+.bannerContainerDesktop {
+    @extend .bannerBackground;
+    @media screen and (max-width: $small) {
+        display: none;
+    }
+}
+
+.bannerContainerMobile {
+    display: none;
+    @extend .bannerBackground;    
+    @media screen and (max-width: $small) {
+        display: block;
+    }
+
+}
+
+.banner {
+    @extend .fs-1;
+    margin-left: 5px;
 }
 
 .disclaimer1 {
