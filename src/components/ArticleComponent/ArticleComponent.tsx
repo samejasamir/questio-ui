@@ -17,15 +17,17 @@ export default function ArticleComponent(){
     <div className='container-fluid'>
     <div className='row'>
     {
-      articles.map((article, index)=>(        
+      articles.map((article, index)=>(
          <div className="cardContainer">
           <div className="card-body">
-            <h5 className="card-title">Title not available</h5>
+            <h5 className="card-title">{article.articleTitle}</h5>
+            <h6 className="crawlDate">Summary Date: {article.articleCrawlDate}</h6>
             {/* <h6 className="card-subtitle mb-2 text-body-secondary">Source: {article.mediaHouse}</h6> */}
-            <p className="card-text">{article.articleSummary}</p>
+            <p className="card-text">{article.articleSummary}</p>            
             <h6 className="badgeCategory">{article.articleCategory}</h6>
             <h6 className="badgeSource">{article.mediaHouse}</h6><br/>
             <a href={article.articleURL} className="card-link" target='window'>{article.articleURL}</a>
+            
           </div>          
         </div>
       ))

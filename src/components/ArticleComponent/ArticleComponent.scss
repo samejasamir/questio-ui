@@ -3,7 +3,7 @@
 .cardContainer{
     @extend .card;
     @extend .col-12;
-    @extend .col-sm;
+    @extend .col-sm-3;
     margin-right: 25px;
     margin-bottom: 25px;
 }
@@ -20,4 +20,9 @@
     @extend .badge;
     @extend .bg-dark;    
     margin-right: 5px;
+}
+
+.crawlDate {
+    font-size:x-small;
+    margin-top: 5px;
 }
